@@ -1,0 +1,47 @@
+unit untImpar;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TfrmImpar = class(TForm)
+    pnlBotao2: TPanel;
+    Label1: TLabel;
+    memResultado: TMemo;
+    pnlGerar: TPanel;
+    btnGerar: TSpeedButton;
+    btnLimpar: TBitBtn;
+    procedure btnGerarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmImpar: TfrmImpar;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmImpar.btnGerarClick(Sender: TObject);
+var num1, num2, resImpar, i: integer;
+begin
+
+      for i := 100 to 200 do
+        begin
+
+        end;
+
+
+
+
+
+
+end;
+
+end.

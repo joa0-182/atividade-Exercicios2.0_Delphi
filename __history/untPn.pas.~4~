@@ -1,0 +1,54 @@
+unit untPn;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TfrmPn = class(TForm)
+    pnlPn: TPanel;
+    Label1: TLabel;
+    pnlGerar: TPanel;
+    btnGerar: TSpeedButton;
+    memPositivo: TMemo;
+    pnlPosNeg: TPanel;
+    Label2: TLabel;
+    Label3: TLabel;
+    edtPositivo: TEdit;
+    edtNegativo: TEdit;
+    memNegativo: TMemo;
+    procedure btnGerarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPn: TfrmPn;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPn.btnGerarClick(Sender: TObject);
+var positivo, negativo, somaP, somaN, i: integer;
+begin
+
+
+  for i := -20 to 20 do
+    begin
+      if True then
+
+    end;
+
+
+
+
+
+
+end;
+
+end.

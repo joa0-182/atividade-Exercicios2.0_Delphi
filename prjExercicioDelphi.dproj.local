@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/09/27 19:28:46.000.681,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/27 19:40:56.000.091,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/09/27 19:42:16.000.789,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\untPrincipal.pas=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/27 19:42:16.000.789,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\untPrincipal.dfm=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/09/27 19:42:23.000.294,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\untIMC.dfm=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2022/09/27 19:42:23.000.294,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\untIMC.pas=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/09/27 19:42:32.000.852,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\prjExercicioDelphi.dproj=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/09/27 19:43:46.000.082,=C:\Users\etec\Desktop\lista de exercicio delphi 2.0\Unit1.pas</Transaction>
+    <Transaction>2022/09/27 19:44:29.000.099,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\untImpar.pas=C:\Users\etec\Desktop\lista de exercicio delphi 2.0\Unit1.pas</Transaction>
+    <Transaction>2022/09/27 19:44:29.000.099,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\untImpar.dfm=C:\Users\etec\Desktop\lista de exercicio delphi 2.0\Unit1.dfm</Transaction>
+    <Transaction>2022/09/27 19:45:39.000.861,=C:\Users\etec\Desktop\lista de exercicio delphi 2.0\Unit1.pas</Transaction>
+    <Transaction>2022/09/27 19:47:44.000.494,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\untPn.dfm=C:\Users\etec\Desktop\lista de exercicio delphi 2.0\Unit1.dfm</Transaction>
+    <Transaction>2022/09/27 19:47:44.000.494,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\untPn.pas=C:\Users\etec\Desktop\lista de exercicio delphi 2.0\Unit1.pas</Transaction>
+    <Transaction>2022/09/27 19:48:23.000.339,=C:\Users\etec\Desktop\lista de exercicio delphi 2.0\Unit1.pas</Transaction>
+    <Transaction>2022/09/29 00:07:20.000.081,=C:\Users\João Pedro\Desktop\lista de exercicio delphi 2.0\Unit1.pas</Transaction>
+    <Transaction>2022/09/29 00:20:53.000.160,C:\Users\João Pedro\Desktop\lista de exercicio delphi 2.0\Unit1.dfm=C:\Users\João Pedro\Desktop\lista de exercicio delphi 2.0\untDados.dfm</Transaction>
+    <Transaction>2022/09/29 00:20:53.000.160,C:\Users\João Pedro\Desktop\lista de exercicio delphi 2.0\Unit1.pas=C:\Users\João Pedro\Desktop\lista de exercicio delphi 2.0\untDados.pas</Transaction>
+    <Transaction>2022/09/29 15:14:36.000.119,=C:\Users\João Pedro\Desktop\lista de exercicio delphi 2.0\Unit1.pas</Transaction>
+    <Transaction>2022/09/29 15:33:35.000.704,C:\Users\João Pedro\Desktop\lista de exercicio delphi 2.0\Unit1.pas=C:\Users\João Pedro\Desktop\lista de exercicio delphi 2.0\untGitHub.pas</Transaction>
+    <Transaction>2022/09/29 15:33:35.000.704,C:\Users\João Pedro\Desktop\lista de exercicio delphi 2.0\Unit1.dfm=C:\Users\João Pedro\Desktop\lista de exercicio delphi 2.0\untGitHub.dfm</Transaction>
+    <Transaction>2022/09/29 19:30:23.000.068,=C:\Users\etec\Desktop\lista de exercicio delphi 2.0\Unit1.pas</Transaction>
+    <Transaction>2022/09/29 20:01:40.000.370,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\untOrdem.pas=C:\Users\etec\Desktop\lista de exercicio delphi 2.0\Unit1.pas</Transaction>
+    <Transaction>2022/09/29 20:01:40.000.370,C:\Users\etec\Desktop\lista de exercicio delphi 2.0\untOrdem.dfm=C:\Users\etec\Desktop\lista de exercicio delphi 2.0\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

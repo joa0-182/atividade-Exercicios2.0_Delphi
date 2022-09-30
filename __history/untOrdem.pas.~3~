@@ -1,0 +1,43 @@
+unit untOrdem;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmOrdem = class(TForm)
+    pnlOrdenar: TPanel;
+    memOrdenacao: TMemo;
+    btnOrdenar: TSpeedButton;
+    pnlBotao5: TPanel;
+    Label1: TLabel;
+    btnInfo: TBitBtn;
+    procedure btnOrdenarClick(Sender: TObject);
+    procedure btnInfoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmOrdem: TfrmOrdem;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmOrdem.btnInfoClick(Sender: TObject);
+begin
+      Application.MessageBox('Desenvolva um algoritmo que leia 3 valores inteiros e os apresente em ordem decrescente.', '  5° Exercício', MB_OK);
+end;
+
+procedure TfrmOrdem.btnOrdenarClick(Sender: TObject);
+var n1, n2, n3,i: real;
+begin
+
+end;
+
+end.

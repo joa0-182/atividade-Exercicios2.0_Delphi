@@ -1,0 +1,34 @@
+unit untGitHub;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.pngimage, Vcl.ExtCtrls,
+  Vcl.Buttons;
+
+type
+  TfrmGitHub = class(TForm)
+    imgGit: TImage;
+    Shape1: TShape;
+    Shape2: TShape;
+    pnlImg1: TPanel;
+    pnlImg2: TPanel;
+    btnGit1: TSpeedButton;
+    btnGit2: TSpeedButton;
+    Image1: TImage;
+    Image2: TImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmGitHub: TfrmGitHub;
+
+implementation
+
+{$R *.dfm}
+
+end.

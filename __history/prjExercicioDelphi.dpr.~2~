@@ -1,0 +1,18 @@
+program prjExercicioDelphi;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmPrincipal},
+  untIMC in 'untIMC.pas' {frmIMC},
+  untImpar in 'untImpar.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmIMC, frmIMC);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

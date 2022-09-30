@@ -1,0 +1,99 @@
+unit untIMC;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TfrmIMC = class(TForm)
+    Label2: TLabel;
+    Label3: TLabel;
+    edtPeso: TEdit;
+    edtAltura: TEdit;
+    Panel1: TPanel;
+    Label4: TLabel;
+    pnlIMC: TPanel;
+    memComentario: TMemo;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    btnCalcular: TSpeedButton;
+    btnLimpar: TSpeedButton;
+    btnInfo: TBitBtn;
+    btnVoltar: TBitBtn;
+    procedure btnCalcularClick(Sender: TObject);
+    procedure edtPesoExit(Sender: TObject);
+    procedure btnLimparClick(Sender: TObject);
+    procedure btnInfoClick(Sender: TObject);
+    procedure btnVoltarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmIMC: TfrmIMC;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmIMC.btnCalcularClick(Sender: TObject);
+var peso, altura, imc: double;
+begin
+      altura := StrToFloat(edtAltura.Text);
+      peso := StrToFloat(edtPeso.Text);
+
+      imc := 0;
+
+      imc := peso/(altura*altura);
+
+      if imc < 20 then
+        begin
+          ShowMessage('Você está Abaixo do Peso Ideal');
+          memComentario.Lines.Add('Você está abaixo do peso ideal, Treine e Coma mais :p');
+        end
+
+      else if (imc >= 20) and (imc <= 24) then
+        begin
+          ShowMessage('Você está no peso ideal');
+          memComentario.Lines.Add('Você está no Peso Ideal, Parábens ;)');
+        end
+
+      else if imc > 24 then
+        begin
+          ShowMessage('Você está acima do peso ideal');
+          memComentario.Lines.Add('Você está acima do peso ideal, Treine e Faça Dieta :(');
+        end;
+
+end;
+
+procedure TfrmIMC.btnInfoClick(Sender: TObject);
+begin
+      Application.MessageBox('Entrar com o peso e a altura de uma determinada pessoa. Após a digitação, exibir se esta pessoa está ou não com seu peso ideal.', '1° Exercício', MB_OK);
+end;
+
+procedure TfrmIMC.btnLimparClick(Sender: TObject);
+begin
+      edtPeso.Clear;
+      edtAltura.Clear;
+      memComentario.Clear;
+end;
+
+procedure TfrmIMC.btnVoltarClick(Sender: TObject);
+begin
+      frmIMC.Close;
+end;
+
+procedure TfrmIMC.edtPesoExit(Sender: TObject);
+begin
+      if edtPeso.Text = '' then
+        begin
+          Application.MessageBox('Coloque um valor', ' Atenção',MB_OK);
+          edtPeso.SetFocus;
+        end;
+end;
+
+end.

@@ -1,0 +1,53 @@
+unit untPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TfrmPrincipal = class(TForm)
+    Label1: TLabel;
+    pnlBotao1: TPanel;
+    pnlBotao3: TPanel;
+    pnlBotao2: TPanel;
+    pnlBotao4: TPanel;
+    btnIMC: TSpeedButton;
+    btnPn: TSpeedButton;
+    btnImpar: TSpeedButton;
+    btnNone: TSpeedButton;
+    procedure btnIMCClick(Sender: TObject);
+    procedure btnImparClick(Sender: TObject);
+    procedure btnPnClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses untIMC, untImpar, untPn;
+
+procedure TfrmPrincipal.btnIMCClick(Sender: TObject);
+begin
+      frmIMC.ShowModal;
+end;
+
+procedure TfrmPrincipal.btnImparClick(Sender: TObject);
+begin
+      frmImpar.ShowModal;
+end;
+
+procedure TfrmPrincipal.btnPnClick(Sender: TObject);
+begin
+      frmPn.ShowModal;
+end;
+
+end.

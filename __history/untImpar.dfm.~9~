@@ -1,0 +1,107 @@
+object frmImpar: TfrmImpar
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = '2'#176' Exerc'#237'cio - N'#250'meros '#205'mpares'
+  ClientHeight = 527
+  ClientWidth = 683
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 168
+    Top = 120
+    Width = 361
+    Height = 24
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'N'#250'meros '#237'mpares entre 100 e 200'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
+  object pnlImpar: TPanel
+    Left = 248
+    Top = 16
+    Width = 185
+    Height = 50
+    Cursor = crHandPoint
+    ParentCustomHint = False
+    BevelOuter = bvNone
+    Caption = 'N'#250'meros Impares'
+    Color = 46848
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object memResultado: TMemo
+    Left = 168
+    Top = 224
+    Width = 348
+    Height = 201
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    Lines.Strings = (
+      '')
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+  object pnlGerar: TPanel
+    Left = 265
+    Top = 170
+    Width = 153
+    Height = 41
+    BevelOuter = bvNone
+    Color = 2883477
+    ParentBackground = False
+    TabOrder = 2
+    object btnGerar: TSpeedButton
+      Left = 0
+      Top = 0
+      Width = 153
+      Height = 41
+      Align = alClient
+      Caption = 'Gerar'
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      OnClick = btnGerarClick
+      ExplicitLeft = 8
+    end
+  end
+  object btnLimpar: TBitBtn
+    Left = 552
+    Top = 288
+    Width = 73
+    Height = 65
+    Caption = 'Limpar'
+    TabOrder = 3
+    OnClick = btnLimparClick
+  end
+end

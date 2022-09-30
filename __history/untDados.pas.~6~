@@ -1,0 +1,75 @@
+unit untDados;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TfrmDados = class(TForm)
+    pnlBotao4: TPanel;
+    SpeedButton1: TSpeedButton;
+    Label1: TLabel;
+    edtValor1: TEdit;
+    lbl1: TLabel;
+    lbl2: TLabel;
+    Image1: TImage;
+    pnlCalcular: TPanel;
+    pnlLimpar: TPanel;
+    btnCalcular: TSpeedButton;
+    btnLimpar: TSpeedButton;
+    Label4: TLabel;
+    Opcoes: TRadioGroup;
+    edtValor2: TEdit;
+    procedure OpcoesClick(Sender: TObject);
+    procedure btnCalcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmDados: TfrmDados;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmDados.btnCalcularClick(Sender: TObject);
+var kb, mb, gb, tb, valor: float;
+begin
+      if (Opcoes.ItemIndex = 0) then
+        begin
+          kb :=  StrToInt(edtValor1.text);
+          mb :=  StrToInt(edtValor2.text);
+
+          kb := valor / 976.6;
+
+        end;
+end;
+
+procedure TfrmDados.OpcoesClick(Sender: TObject);
+begin
+      if (Opcoes.ItemIndex = 0) then
+        begin
+          lbl1.Caption := 'Kibibyte';
+          lbl2.Caption := 'Megabyte';
+        end;
+
+      if (Opcoes.ItemIndex = 1) then
+        begin
+          lbl1.Caption := 'Megabyte';
+          lbl2.Caption := 'Gigabyte';
+        end;
+
+      if (Opcoes.ItemIndex = 2) then
+        begin
+          lbl1.Caption := 'Gigabyte';
+          lbl2.Caption := 'Terabyte';
+        end;
+
+end;
+
+end.

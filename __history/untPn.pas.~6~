@@ -1,0 +1,68 @@
+unit untPn;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TfrmPn = class(TForm)
+    pnlPn: TPanel;
+    Label1: TLabel;
+    pnlGerar: TPanel;
+    btnGerar: TSpeedButton;
+    memPositivo: TMemo;
+    pnlPosNeg: TPanel;
+    Label2: TLabel;
+    Label3: TLabel;
+    edtPositivo: TEdit;
+    edtNegativo: TEdit;
+    memNegativo: TMemo;
+    btnInfo: TBitBtn;
+    btnVoltar: TBitBtn;
+    procedure btnGerarClick(Sender: TObject);
+    procedure btnInfoClick(Sender: TObject);
+    procedure btnVoltarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPn: TfrmPn;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPn.btnGerarClick(Sender: TObject);
+var positivo, negativo, somaP, somaN, i: integer;
+begin
+
+
+  for i := -20 to 20 do
+    begin
+      if True then
+
+    end;
+
+
+
+
+
+
+end;
+
+procedure TfrmPn.btnInfoClick(Sender: TObject);
+begin
+      Application.MessageBox('Escrever um algoritmo que gere a soma dos números positivos e negativos entre -20 e 20. ', '3° Exercício', MB_OK);
+end;
+
+procedure TfrmPn.btnVoltarClick(Sender: TObject);
+begin
+      frmPn.Close;
+end;
+
+end.

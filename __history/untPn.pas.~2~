@@ -1,0 +1,34 @@
+unit untPn;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TfrmPn = class(TForm)
+    pnlBotao3: TPanel;
+    Label1: TLabel;
+    pnlGerar: TPanel;
+    btnGerar: TSpeedButton;
+    memResultado: TMemo;
+    pnlPosNeg: TPanel;
+    Label2: TLabel;
+    Label3: TLabel;
+    edtPositivo: TEdit;
+    edtNegativo: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPn: TfrmPn;
+
+implementation
+
+{$R *.dfm}
+
+end.

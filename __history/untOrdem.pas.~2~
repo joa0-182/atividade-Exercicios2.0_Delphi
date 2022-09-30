@@ -1,0 +1,34 @@
+unit untOrdem;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmOrdem = class(TForm)
+    Panel1: TPanel;
+    memOrdenacao: TMemo;
+    btnOrdenar: TSpeedButton;
+    procedure btnOrdenarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmOrdem: TfrmOrdem;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmOrdem.btnOrdenarClick(Sender: TObject);
+var n1, n2, n3,i: real;
+begin
+
+end;
+
+end.
